@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B15C206C1E2DCFA500B42022 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C206B1E2DCFA500B42022 /* AppDelegate.swift */; };
+		B15C206E1E2DCFA500B42022 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C206D1E2DCFA500B42022 /* SignInVC.swift */; };
+		B15C20711E2DCFA500B42022 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15C206F1E2DCFA500B42022 /* Main.storyboard */; };
+		B15C20731E2DCFA500B42022 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15C20721E2DCFA500B42022 /* Assets.xcassets */; };
+		B15C20761E2DCFA500B42022 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15C20741E2DCFA500B42022 /* LaunchScreen.storyboard */; };
+		B15C207E1E2DCFDB00B42022 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B15C207D1E2DCFDB00B42022 /* GoogleService-Info.plist */; };
+		FCAC2845FFBC5014B1A5B95F /* Pods_Blake_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF6255F72E77F4349B69834 /* Pods_Blake_Social.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3DF6255F72E77F4349B69834 /* Pods_Blake_Social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blake_Social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		548B480A8323A37AD499066A /* Pods-Blake Social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blake Social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Blake Social/Pods-Blake Social.debug.xcconfig"; sourceTree = "<group>"; };
+		8CB38E732F91072B0B496C4B /* Pods-Blake Social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blake Social.release.xcconfig"; path = "Pods/Target Support Files/Pods-Blake Social/Pods-Blake Social.release.xcconfig"; sourceTree = "<group>"; };
+		B15C20681E2DCFA500B42022 /* Blake Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blake Social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B15C206B1E2DCFA500B42022 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B15C206D1E2DCFA500B42022 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		B15C20701E2DCFA500B42022 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B15C20721E2DCFA500B42022 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B15C20751E2DCFA500B42022 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B15C20771E2DCFA500B42022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B15C207D1E2DCFDB00B42022 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B15C20651E2DCFA400B42022 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCAC2845FFBC5014B1A5B95F /* Pods_Blake_Social.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A916A276171A38CC22310DFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DF6255F72E77F4349B69834 /* Pods_Blake_Social.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B15C205F1E2DCFA400B42022 = {
+			isa = PBXGroup;
+			children = (
+				B15C206A1E2DCFA500B42022 /* Blake Social */,
+				B15C20691E2DCFA500B42022 /* Products */,
+				F804E823C9B6C70195D22ABC /* Pods */,
+				A916A276171A38CC22310DFF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B15C20691E2DCFA500B42022 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B15C20681E2DCFA500B42022 /* Blake Social.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B15C206A1E2DCFA500B42022 /* Blake Social */ = {
+			isa = PBXGroup;
+			children = (
+				B15C207F1E2DD22300B42022 /* Model */,
+				B15C20801E2DD22900B42022 /* View */,
+				B15C20811E2DD22F00B42022 /* Controller */,
+				B15C206B1E2DCFA500B42022 /* AppDelegate.swift */,
+				B15C206F1E2DCFA500B42022 /* Main.storyboard */,
+				B15C20721E2DCFA500B42022 /* Assets.xcassets */,
+				B15C20741E2DCFA500B42022 /* LaunchScreen.storyboard */,
+				B15C20771E2DCFA500B42022 /* Info.plist */,
+				B15C207D1E2DCFDB00B42022 /* GoogleService-Info.plist */,
+			);
+			path = "Blake Social";
+			sourceTree = "<group>";
+		};
+		B15C207F1E2DD22300B42022 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B15C20801E2DD22900B42022 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B15C20811E2DD22F00B42022 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B15C206D1E2DCFA500B42022 /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F804E823C9B6C70195D22ABC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				548B480A8323A37AD499066A /* Pods-Blake Social.debug.xcconfig */,
+				8CB38E732F91072B0B496C4B /* Pods-Blake Social.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B15C20671E2DCFA400B42022 /* Blake Social */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B15C207A1E2DCFA500B42022 /* Build configuration list for PBXNativeTarget "Blake Social" */;
+			buildPhases = (
+				210C3FD04CE609BEC242B556 /* [CP] Check Pods Manifest.lock */,
+				B15C20641E2DCFA400B42022 /* Sources */,
+				B15C20651E2DCFA400B42022 /* Frameworks */,
+				B15C20661E2DCFA400B42022 /* Resources */,
+				2BF37EB884ABEEFC9A1168E1 /* [CP] Embed Pods Frameworks */,
+				4E4D331607BBEABA6F196A57 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Blake Social";
+			productName = "Blake Social";
+			productReference = B15C20681E2DCFA500B42022 /* Blake Social.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B15C20601E2DCFA400B42022 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = BJ;
+				TargetAttributes = {
+					B15C20671E2DCFA400B42022 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 272BV27993;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B15C20631E2DCFA400B42022 /* Build configuration list for PBXProject "Blake Social" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B15C205F1E2DCFA400B42022;
+			productRefGroup = B15C20691E2DCFA500B42022 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B15C20671E2DCFA400B42022 /* Blake Social */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B15C20661E2DCFA400B42022 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15C20761E2DCFA500B42022 /* LaunchScreen.storyboard in Resources */,
+				B15C207E1E2DCFDB00B42022 /* GoogleService-Info.plist in Resources */,
+				B15C20731E2DCFA500B42022 /* Assets.xcassets in Resources */,
+				B15C20711E2DCFA500B42022 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		210C3FD04CE609BEC242B556 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2BF37EB884ABEEFC9A1168E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Blake Social/Pods-Blake Social-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E4D331607BBEABA6F196A57 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Blake Social/Pods-Blake Social-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B15C20641E2DCFA400B42022 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15C206E1E2DCFA500B42022 /* SignInVC.swift in Sources */,
+				B15C206C1E2DCFA500B42022 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B15C206F1E2DCFA500B42022 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B15C20701E2DCFA500B42022 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B15C20741E2DCFA500B42022 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B15C20751E2DCFA500B42022 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B15C20781E2DCFA500B42022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B15C20791E2DCFA500B42022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B15C207B1E2DCFA500B42022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 548B480A8323A37AD499066A /* Pods-Blake Social.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 272BV27993;
+				INFOPLIST_FILE = "Blake Social/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GonadsEP.Blake-Social";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B15C207C1E2DCFA500B42022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CB38E732F91072B0B496C4B /* Pods-Blake Social.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 272BV27993;
+				INFOPLIST_FILE = "Blake Social/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GonadsEP.Blake-Social";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B15C20631E2DCFA400B42022 /* Build configuration list for PBXProject "Blake Social" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B15C20781E2DCFA500B42022 /* Debug */,
+				B15C20791E2DCFA500B42022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B15C207A1E2DCFA500B42022 /* Build configuration list for PBXNativeTarget "Blake Social" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B15C207B1E2DCFA500B42022 /* Debug */,
+				B15C207C1E2DCFA500B42022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B15C20601E2DCFA400B42022 /* Project object */;
+}
