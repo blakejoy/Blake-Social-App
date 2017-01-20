@@ -22,6 +22,7 @@
 		B15C20931E31814600B42022 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C20921E31814600B42022 /* CircleView.swift */; };
 		B15C20951E3194D000B42022 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C20941E3194D000B42022 /* PostCell.swift */; };
 		B15C20981E31B64500B42022 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C20971E31B64500B42022 /* DataService.swift */; };
+		B15C209A1E32A06600B42022 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C20991E32A06600B42022 /* Post.swift */; };
 		FCAC2845FFBC5014B1A5B95F /* Pods_Blake_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF6255F72E77F4349B69834 /* Pods_Blake_Social.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		B15C20921E31814600B42022 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		B15C20941E3194D000B42022 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		B15C20971E31B64500B42022 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		B15C20991E32A06600B42022 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		B15C207F1E2DD22300B42022 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B15C20991E32A06600B42022 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				B15C20931E31814600B42022 /* CircleView.swift in Sources */,
 				B15C206E1E2DCFA500B42022 /* SignInVC.swift in Sources */,
 				B15C208C1E2EF94500B42022 /* NiceBtn.swift in Sources */,
+				B15C209A1E32A06600B42022 /* Post.swift in Sources */,
 				B15C208A1E2EF76B00B42022 /* NiceField.swift in Sources */,
 				B15C20881E2EF5A300B42022 /* RoundBtn.swift in Sources */,
 				B15C20981E31B64500B42022 /* DataService.swift in Sources */,
