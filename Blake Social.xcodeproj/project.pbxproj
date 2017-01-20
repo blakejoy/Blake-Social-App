@@ -12,12 +12,14 @@
 		B15C20711E2DCFA500B42022 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15C206F1E2DCFA500B42022 /* Main.storyboard */; };
 		B15C20731E2DCFA500B42022 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15C20721E2DCFA500B42022 /* Assets.xcassets */; };
 		B15C20761E2DCFA500B42022 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15C20741E2DCFA500B42022 /* LaunchScreen.storyboard */; };
-		B15C207E1E2DCFDB00B42022 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B15C207D1E2DCFDB00B42022 /* GoogleService-Info.plist */; };
 		B15C20831E2EF29A00B42022 /* NiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C20821E2EF29A00B42022 /* NiceView.swift */; };
 		B15C20861E2EF36800B42022 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C20851E2EF36800B42022 /* Constants.swift */; };
 		B15C20881E2EF5A300B42022 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C20871E2EF5A300B42022 /* RoundBtn.swift */; };
 		B15C208A1E2EF76B00B42022 /* NiceField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C20891E2EF76B00B42022 /* NiceField.swift */; };
 		B15C208C1E2EF94500B42022 /* NiceBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C208B1E2EF94500B42022 /* NiceBtn.swift */; };
+		B15C208F1E2F1EC900B42022 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B15C208E1E2F1EC900B42022 /* GoogleService-Info.plist */; };
+		B15C20911E2F3D1C00B42022 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C20901E2F3D1C00B42022 /* FeedVC.swift */; };
+		B15C20931E31814600B42022 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C20921E31814600B42022 /* CircleView.swift */; };
 		FCAC2845FFBC5014B1A5B95F /* Pods_Blake_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF6255F72E77F4349B69834 /* Pods_Blake_Social.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,12 +34,15 @@
 		B15C20721E2DCFA500B42022 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B15C20751E2DCFA500B42022 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B15C20771E2DCFA500B42022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B15C207D1E2DCFDB00B42022 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B15C20821E2EF29A00B42022 /* NiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiceView.swift; sourceTree = "<group>"; };
 		B15C20851E2EF36800B42022 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B15C20871E2EF5A300B42022 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		B15C20891E2EF76B00B42022 /* NiceField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiceField.swift; sourceTree = "<group>"; };
 		B15C208B1E2EF94500B42022 /* NiceBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiceBtn.swift; sourceTree = "<group>"; };
+		B15C208D1E2F1C6600B42022 /* Blake Social.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Blake Social.entitlements"; sourceTree = "<group>"; };
+		B15C208E1E2F1EC900B42022 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B15C20901E2F3D1C00B42022 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		B15C20921E31814600B42022 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,7 @@
 		B15C206A1E2DCFA500B42022 /* Blake Social */ = {
 			isa = PBXGroup;
 			children = (
+				B15C208D1E2F1C6600B42022 /* Blake Social.entitlements */,
 				B15C20841E2EF35900B42022 /* Util */,
 				B15C207F1E2DD22300B42022 /* Model */,
 				B15C20801E2DD22900B42022 /* View */,
@@ -90,7 +96,7 @@
 				B15C20721E2DCFA500B42022 /* Assets.xcassets */,
 				B15C20741E2DCFA500B42022 /* LaunchScreen.storyboard */,
 				B15C20771E2DCFA500B42022 /* Info.plist */,
-				B15C207D1E2DCFDB00B42022 /* GoogleService-Info.plist */,
+				B15C208E1E2F1EC900B42022 /* GoogleService-Info.plist */,
 			);
 			path = "Blake Social";
 			sourceTree = "<group>";
@@ -109,6 +115,7 @@
 				B15C20871E2EF5A300B42022 /* RoundBtn.swift */,
 				B15C20891E2EF76B00B42022 /* NiceField.swift */,
 				B15C208B1E2EF94500B42022 /* NiceBtn.swift */,
+				B15C20921E31814600B42022 /* CircleView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -117,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				B15C206D1E2DCFA500B42022 /* SignInVC.swift */,
+				B15C20901E2F3D1C00B42022 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -175,6 +183,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 272BV27993;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -202,7 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B15C20761E2DCFA500B42022 /* LaunchScreen.storyboard in Resources */,
-				B15C207E1E2DCFDB00B42022 /* GoogleService-Info.plist in Resources */,
+				B15C208F1E2F1EC900B42022 /* GoogleService-Info.plist in Resources */,
 				B15C20731E2DCFA500B42022 /* Assets.xcassets in Resources */,
 				B15C20711E2DCFA500B42022 /* Main.storyboard in Resources */,
 			);
@@ -263,10 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B15C20931E31814600B42022 /* CircleView.swift in Sources */,
 				B15C206E1E2DCFA500B42022 /* SignInVC.swift in Sources */,
 				B15C208C1E2EF94500B42022 /* NiceBtn.swift in Sources */,
 				B15C208A1E2EF76B00B42022 /* NiceField.swift in Sources */,
 				B15C20881E2EF5A300B42022 /* RoundBtn.swift in Sources */,
+				B15C20911E2F3D1C00B42022 /* FeedVC.swift in Sources */,
 				B15C20831E2EF29A00B42022 /* NiceView.swift in Sources */,
 				B15C206C1E2DCFA500B42022 /* AppDelegate.swift in Sources */,
 				B15C20861E2EF36800B42022 /* Constants.swift in Sources */,
@@ -391,6 +406,7 @@
 			baseConfigurationReference = 548B480A8323A37AD499066A /* Pods-Blake Social.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Blake Social/Blake Social.entitlements";
 				DEVELOPMENT_TEAM = 272BV27993;
 				INFOPLIST_FILE = "Blake Social/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -405,6 +421,7 @@
 			baseConfigurationReference = 8CB38E732F91072B0B496C4B /* Pods-Blake Social.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Blake Social/Blake Social.entitlements";
 				DEVELOPMENT_TEAM = 272BV27993;
 				INFOPLIST_FILE = "Blake Social/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
