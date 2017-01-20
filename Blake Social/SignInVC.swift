@@ -57,7 +57,8 @@ class SignInVC: UIViewController {
       }else{
         print("JESS: Successfully authenticated with Firebase")
         if let user = user{
-self.completeSignIn(id: user.uid)
+          let userData = ["provider": credential.provider]
+          self.completeSignIn(id: user.uid,userData: userData)
         }
       }
   })
@@ -69,7 +70,8 @@ self.completeSignIn(id: user.uid)
         if error == nil{
           print("JESS: Email user authenticated with Firebase")
           if let user = user{
-          self.completeSignIn(id: user.uid)
+            let userData = ["provider":user.providerID]
+            self.completeSignIn(id: user.uid,userData:userData)
           }
         }else{
           FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: {(user,error) in
@@ -78,7 +80,8 @@ self.completeSignIn(id: user.uid)
             }else{
               print("JESS: Successfully authenticated with Firebase")
               if let user = user{
-              self.completeSignIn(id: user.uid)
+                let userData = ["provider":user.providerID]
+                self.completeSignIn(id: user.uid,userData: userData)
               }
             }
           })
@@ -90,7 +93,8 @@ self.completeSignIn(id: user.uid)
   }
   
   
-  func completeSignIn(id: String){
+  func completeSignIn(id: String,userData: Dictionary<String, String>){
+    DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
     let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
     print("JESS:Data saved to keychain - \(keychainResult)")
     performSegue(withIdentifier: "goToFeed", sender: nil)

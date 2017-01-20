@@ -153,12 +153,16 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GNr-9n-WHG">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="sKP-DD-kn5">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="sKP-DD-kn5">
                                         <rect key="frame" x="16" y="20" width="45" height="38"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="MaM-yr-PTs"/>
                                             <constraint firstAttribute="width" constant="45" id="Qm1-bX-6ml"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="NAr-Y2-Sqs" appends="YES" id="Sfr-6X-Paw"/>
+                                        </connections>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9I-aC-4iZ">
                                         <rect key="frame" x="135" y="27" width="105" height="24"/>
@@ -219,11 +223,11 @@
                                     <constraint firstItem="eQ4-oB-eWd" firstAttribute="leading" secondItem="GgB-NY-mSz" secondAttribute="leading" constant="8" id="zl7-YH-iZL"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="338" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YYh-20-sba">
-                                <rect key="frame" x="0.0" y="162" width="375" height="505"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="338" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YYh-20-sba">
+                                <rect key="frame" x="0.0" y="154" width="375" height="513"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="338" id="UZw-rY-98z">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="338" id="UZw-rY-98z" customClass="PostCell" customModule="Blake_Social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="338"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UZw-rY-98z" id="4zU-3M-TMZ">
@@ -239,7 +243,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eof-wB-vw7">
                                                                     <rect key="frame" x="0.0" y="0.0" width="327" height="60"/>
                                                                     <subviews>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="g8Y-kG-At7">
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="g8Y-kG-At7" customClass="CircleView" customModule="Blake_Social" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="60" id="ETg-n3-ib0"/>
@@ -262,11 +266,14 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="jMa-Pu-9Zr">
-                                                                    <rect key="frame" x="0.0" y="68" width="327" height="127"/>
+                                                                    <rect key="frame" x="0.0" y="68" width="327" height="149"/>
                                                                 </imageView>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eyM-ad-QRy">
-                                                                    <rect key="frame" x="0.0" y="203" width="327" height="72"/>
+                                                                    <rect key="frame" x="0.0" y="225" width="327" height="50"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="fuu-7D-DT7"/>
+                                                                    </constraints>
                                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -302,6 +309,7 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.81176470590000005" green="0.84705882349999995" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="LcN-WR-HgD" firstAttribute="top" secondItem="4zU-3M-TMZ" secondAttribute="top" constant="8" id="3QE-iq-3ug"/>
                                                 <constraint firstAttribute="bottom" secondItem="LcN-WR-HgD" secondAttribute="bottom" constant="8" id="ZZd-zV-dyX"/>
@@ -309,6 +317,13 @@
                                                 <constraint firstItem="LcN-WR-HgD" firstAttribute="leading" secondItem="4zU-3M-TMZ" secondAttribute="leading" constant="16" id="rpT-0R-Rrr"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="caption" destination="eyM-ad-QRy" id="Dpf-m0-Ql3"/>
+                                            <outlet property="likesLbl" destination="3hk-7B-JsG" id="80Z-ov-hd0"/>
+                                            <outlet property="postImage" destination="jMa-Pu-9Zr" id="vKr-tw-qJM"/>
+                                            <outlet property="profileImage" destination="g8Y-kG-At7" id="ysn-Q2-9qp"/>
+                                            <outlet property="userLabel" destination="hqa-Jd-ZAp" id="O96-uA-3Yn"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -324,14 +339,20 @@
                             <constraint firstItem="GNr-9n-WHG" firstAttribute="leading" secondItem="CmA-ll-pqD" secondAttribute="leading" id="dsF-rH-N08"/>
                             <constraint firstItem="GgB-NY-mSz" firstAttribute="leading" secondItem="CmA-ll-pqD" secondAttribute="leading" constant="16" id="iPM-7V-Vi9"/>
                             <constraint firstItem="GNr-9n-WHG" firstAttribute="top" secondItem="CmA-ll-pqD" secondAttribute="top" id="j2s-1s-0ae"/>
-                            <constraint firstItem="YYh-20-sba" firstAttribute="top" secondItem="GgB-NY-mSz" secondAttribute="bottom" constant="16" id="yjT-Sf-jCg"/>
+                            <constraint firstItem="YYh-20-sba" firstAttribute="top" secondItem="GgB-NY-mSz" secondAttribute="bottom" constant="8" id="yjT-Sf-jCg"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="YYh-20-sba" id="CjI-e0-KUZ"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="5B8-vZ-waZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u96-dT-3yr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="NAr-Y2-Sqs">
+                    <connections>
+                        <action selector="signOutTapped:" destination="wik-ET-gca" id="iKi-Kq-gfU"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1061.5999999999999" y="138.98050974512745"/>
         </scene>

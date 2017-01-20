@@ -120,11 +120,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Blake Social/FeedVC.swift"
-            timestampString = "506477772.878888"
+            timestampString = "506566121.877743"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "signOutTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>

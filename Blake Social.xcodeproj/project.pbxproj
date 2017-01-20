@@ -20,6 +20,8 @@
 		B15C208F1E2F1EC900B42022 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B15C208E1E2F1EC900B42022 /* GoogleService-Info.plist */; };
 		B15C20911E2F3D1C00B42022 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C20901E2F3D1C00B42022 /* FeedVC.swift */; };
 		B15C20931E31814600B42022 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C20921E31814600B42022 /* CircleView.swift */; };
+		B15C20951E3194D000B42022 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C20941E3194D000B42022 /* PostCell.swift */; };
+		B15C20981E31B64500B42022 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C20971E31B64500B42022 /* DataService.swift */; };
 		FCAC2845FFBC5014B1A5B95F /* Pods_Blake_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF6255F72E77F4349B69834 /* Pods_Blake_Social.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,8 @@
 		B15C208E1E2F1EC900B42022 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B15C20901E2F3D1C00B42022 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		B15C20921E31814600B42022 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		B15C20941E3194D000B42022 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		B15C20971E31B64500B42022 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 		B15C206A1E2DCFA500B42022 /* Blake Social */ = {
 			isa = PBXGroup;
 			children = (
+				B15C20961E31B5AB00B42022 /* Services */,
 				B15C208D1E2F1C6600B42022 /* Blake Social.entitlements */,
 				B15C20841E2EF35900B42022 /* Util */,
 				B15C207F1E2DD22300B42022 /* Model */,
@@ -116,6 +121,7 @@
 				B15C20891E2EF76B00B42022 /* NiceField.swift */,
 				B15C208B1E2EF94500B42022 /* NiceBtn.swift */,
 				B15C20921E31814600B42022 /* CircleView.swift */,
+				B15C20941E3194D000B42022 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -135,6 +141,14 @@
 				B15C20851E2EF36800B42022 /* Constants.swift */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		B15C20961E31B5AB00B42022 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B15C20971E31B64500B42022 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		F804E823C9B6C70195D22ABC /* Pods */ = {
@@ -281,10 +295,12 @@
 				B15C208C1E2EF94500B42022 /* NiceBtn.swift in Sources */,
 				B15C208A1E2EF76B00B42022 /* NiceField.swift in Sources */,
 				B15C20881E2EF5A300B42022 /* RoundBtn.swift in Sources */,
+				B15C20981E31B64500B42022 /* DataService.swift in Sources */,
 				B15C20911E2F3D1C00B42022 /* FeedVC.swift in Sources */,
 				B15C20831E2EF29A00B42022 /* NiceView.swift in Sources */,
 				B15C206C1E2DCFA500B42022 /* AppDelegate.swift in Sources */,
 				B15C20861E2EF36800B42022 /* Constants.swift in Sources */,
+				B15C20951E3194D000B42022 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
